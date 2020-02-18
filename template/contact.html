@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+		<div class="content">
+			<div class="contact">
+				<div class="container">
+					<div class="google-map">
+						<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ0_jVTpczXDkRpaWBZWzrY4A&key=AIzaSyC1_IV0iaZiW2MeSwpb4dArD5gasmlDBAY" allowfullscreen></iframe>
+					</div>
+					<div class="contact-grids">
+						<div class="col-md-6 contact-right">
+							<form>
+								<h5>name</h5>
+								<input type="text">
+								<h5>emailaddress</h5>
+								<input type="text">
+								<h5>message</h5>
+								 <textarea></textarea>
+								 <input type="submit" value="send">
+						 	 </form>
+						</div>
+						<div class="col-md-6 contact-left">
+							<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below 
+								for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum
+								 et Malorum" by Cicero are also reproduced in their exact original form, 
+								 accompanied by English versions from the 1914 translation by H. Rackham.</p>
+								<address>
+									<p>The Company Name Inc.</p>
+									<p>7899 St Vincent Place,</p>
+									<p>Glasgow,Le 99 Pr 45.</p>
+									<p>Telephone : +1 800 603 6035</p>
+									<p>FAX : +1 800 889 9898</p>
+									<p>E-mail : <a href="mailto:example@mail.com">example@mail.com</a></p>
+								</address>
+						</div>
+						<div class="clearfix"></div>
+				</div>
+				</div>
+			</div>
+
+{% endblock %}

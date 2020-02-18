@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block script %}
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" /><!------ Include the above in your HEAD tag ---------->
+	{% endblock %}
+{% block content %}
+
+<br>
+<br>
+
+<div class="row" style="padding-left:50px">
+	{% for pro in products %}
+<div class="col-md-4">
+	<figure class="card card-product">
+		<div class="img-wrap img-size">
+			<img src="{{ pro.img1.url }}" style="height:500px;width:500px " >
+
+		</div>
+
+		<figcaption class="info-wrap" style="margin-top: 350px;">
+			<h6 class="title text-dots"><a href="#">{{pro.name}}</a></h6>
+			<div class="action-wrap">
+				<a href="#" class="btn btn-primary btn-sm float-right"> Order </a>
+				<div class="price-wrap h5">
+					<span class="price-new">{{ pro.price }}</span>
+
+				</div> <!-- price-wrap.// -->
+			</div> <!-- action-wrap -->
+		</figcaption>
+	</figure> <!-- card // -->
+</div> <!-- col // -->
+	{% endfor %}
+</div> <!-- row.// -->
+
+
+</div>
+<!--container end-->
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--lightbox-->
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css">
+<script src="js/jquery.lightbox.js"></script>
+<script>
+
+  $(function() {
+    $('.gallery a').lightbox(); 
+  });
+</script>
+<!--lightbox-->
+
+
+		<!--gallery-->
+		<div class="content">
+			<div class="gallery-section">
+					<div class="container">
+					<div class="gallery-grids">
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/20181010_110303.jpg' %}"><img src="{% static 'images/20181010_110303.jpg' %}"  style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/g2.jpg' %}"><img src="{% static 'images/IMG-20181010-WA0049.jpg' %}"  style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>	
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/g3.jpg' %}"><img src="{% static 'images/DSC_1805.jpg' %}"  style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grids">
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/g1.jpg' %}"><img src="{% static 'images/g1.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>	
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/g2.jpg' %}"><img src="{% static 'images/g2.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>	
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+						<a class="mask" href="{% static 'images/g3.jpg' %}"><img src="{% static 'images/g3.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+					</div>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="gallery-grids">
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+							<a class="mask" href="{% static 'images/g4.jpg' %}"><img src="{% static 'images/g4.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+						</div>	
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+							<a class="mask" href="{% static 'images/g6.jpg' %}"><img src="{% static 'images/g6.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+						</div>	
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="gallery">
+							<a class="mask" href="{% static 'images/g5.jpg' %}"><img src="{% static 'images/g5.jpg' %}" style="height:275px;width: 400px;" class="img-responsive zoom-img" alt="/" title="image-name"></a>
+						</div>	
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!--gallery-->
+{% endblock %}
